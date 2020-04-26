@@ -1,0 +1,34 @@
+.btn-group.special {
+
+  display: flex;
+}
+
+.special .btn {
+  flex: 1
+}
+#btn1 {
+  border-radius: 0 !important;
+  padding: 10px 10px 10px 10px;
+  border: solid 0.1px #706f6d;
+  background-color: white;
+}
+#btn2 {
+  border-radius: 0 !important;
+  padding: 10px 10px 10px 10px;
+  border: solid 0.1px #706f6d;
+  background-color: white;
+
+}
+.btn:focus,.btn:active {
+
+   box-shadow: none;
+   border:0.14em solid #ebba28 !important; /* here configure as your needs */
+    color:#ebba28;
+}
+a{
+  color: black !important;
+  text-decoration: none !important;
+}
+#tit1{
+  color: blue;
+}
