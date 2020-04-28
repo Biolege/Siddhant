@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///E:/jquery.js"></script>
+  </head>
+  <body>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      <nav class="sidebar">
+        <div class="logo">
+          <a href="#"><img src="logo-mdb-jquery-small.png" alt=""></a>
+        </div>
+        <ul>
+          <li>
+            <form class="search-form" role="search">
+              <div class="search">
+                <input type="text" class="form-control" placeholder="Search" >
+              </div>
+            </form>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li>
+            <a href="#" class="get-btn txt1" id="a1">Getting Started
+            <span class="fas fa-caret-down first"></span></a>
+              <ul class="get-show">
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">About MDB</a></li>
+                <li><a href="#">Download</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="lay-btn txt2" id="a2">Layout
+            <span class="fas fa-caret-down second"></span></a>
+              <ul class="lay-show">
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">About MDB</a></li>
+                <li><a href="#">Download</a></li>
+              </ul>
+          </li>
+        </ul>
+      </nav>
+      <script>
+      $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+
+      });
+          $('.get-btn').click(function(){
+            $('nav ul .get-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+            $('nav ul .txt1').toggleClass("col");
+          });
+          $('.lay-btn').click(function(){
+            $('nav ul .lay-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+            $('nav ul .txt2').toggleClass("col");
+
+          });
+      </script>
+
+  </body>
+</html>
