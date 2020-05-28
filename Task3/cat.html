@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="cat.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="section1">
+          <ul class="progressbar">
+            <li id="step1" class="progress-step">
+              <p>Select Test and Lab</p>
+            </li>
+            <li id="step2" class="progress-step">
+              <p>Patient Details</p>
+            </li>
+            <li id="step2" class="progress-step">
+              <p>Payment</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-10" id="section2">
+        <form class="form-inline">
+          <label class="sr-only" for="inlineFormInputName2">Name</label>
+          <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Location(PIN Code)">
+
+          <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+          <div class="input-group mb-2 mr-sm-2">
+
+            <!-- Search form -->
+            <input class="form-control " type="text" placeholder="+ Add more tests" aria-label="Search">
+          </div>
+
+          <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Labs
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-10" id="section3">
+        <div class="section3">
+          <h3>
+            Catalogue
+            <hr>
+          </h3>
+          <button type="button" class="btn btn-outline">
+            <p>Thyroid Profile, Total</p>
+          </button>
+          <button type="button" class="btn btn-outline">
+            <p>Thyroid Profile, Total</p>
+          </button>
+          <button type="button" class="btn btn-outline">
+            <p>Thyroid Profile, Total</p>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-3 offset-md-1  col-sm-10" id="section4">
+        <div class="section4">
+          <h3>
+            Tests Selected
+            <hr>
+          </h3>
+          <p>0 Test Selected</p>
+          <center><button type="button" class="btn" onclick="next()" id="proceed">Proceed</button></center>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <script type="text/javascript">
+    let step = 'step1';
+
+    const step1 = document.getElementById('step1');
+    const step2 = document.getElementById('step2');
+    const step3 = document.getElementById('step3');
+    const step4 = document.getElementById('step4');
+
+    function next() {
+      if (step === 'step1') {
+        step = 'step2';
+        step1.classList.remove("is-active");
+        step1.classList.add("is-complete");
+        step2.classList.add("is-active");
+
+      } else if (step === 'step2') {
+        step = 'step3';
+        step2.classList.remove("is-active");
+        step2.classList.add("is-complete");
+        step3.classList.add("is-active");
+
+      } else if (step === 'step3') {
+        step = 'step4d';
+        step3.classList.remove("is-active");
+        step3.classList.add("is-complete");
+        step4.classList.add("is-active");
+
+      } else if (step === 'step4d') {
+        step = 'complete';
+        step4.classList.remove("is-active");
+        step4.classList.add("is-complete");
+
+      } else if (step === 'complete') {
+        step = 'step1';
+        step4.classList.remove("is-complete");
+        step3.classList.remove("is-complete");
+        step2.classList.remove("is-complete");
+        step1.classList.remove("is-complete");
+        step1.classList.add("is-active");
+      }
+    }
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
