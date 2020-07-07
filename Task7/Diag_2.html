@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Hello, world!</title>
+</head>
+<style media="screen">
+  @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+  ul {
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px #e8e6e6;
+    display: flex;
+  }
+
+  ul li {
+    text-align: center;
+    flex: 1;
+
+  }
+
+  ul li a:hover {
+    text-decoration: none;
+  }
+
+
+  .list-group .list-group-item .item1:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f2c0";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .list-group .list-group-item .item2:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f0f3 ";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .list-group .list-group-item .item3:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f2c0";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .list-group .list-group-item .item4:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f0fa";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .list-group .list-group-item .item5:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f0f3 ";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .list-group .list-group-item .item6:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f09d ";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .list-group .list-group-item .item7:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f234 ";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .list-group .list-group-item .item8:before {
+    color: white;
+    font-family: FontAwesome;
+    content: "\f0f3 ";
+    padding: 10px 12px 10px 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #141B41;
+  }
+
+  .name {
+    color: black;
+    margin-top: 7px;
+    font-size: 12px;
+
+
+  }
+
+  .Heading {
+    margin: 30px auto 30px auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .table {
+    margin-top: 30px;
+  }
+
+  .table-bordered>tbody>tr>td {
+    border: none;
+    margin-left: auto;
+  }
+
+  .card {
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px #e8e6e6;
+  }
+
+  .rightcol {
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px #e8e6e6;
+  }
+
+  .raro:after {
+    font-family: FontAwesome;
+    content: "\f061";
+    font-size: 8px;
+    padding: 3px 3px 3px 3px;
+    margin-left: 10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    background-color: #e8e6e6;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <ul class="list-group list-group-horizontal-xl mt-4 list-group-flush">
+      <li class="list-group-item">
+        <a href="" class="item1">
+          <div class="name">My Details</div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="" class="item2">
+          <div class="name">Appointments</div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="" class="item3">
+          <div class="name">Appointments</div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="" class="item4">
+          <div class="name">Medicine</div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="" class="item5">
+          <div class="name">My Details</div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="" class="item6">
+          <div class="name">Appointments</div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="" class="item7">
+          <div class="name">Appointments</div>
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="" class="item8">
+          <div class="name">Medicine</div>
+        </a>
+      </li>
+    </ul>
+    <div class="row">
+      <div class="col-12">
+        <h4 class="Heading">Diagnostics</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pressure</h5>
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td style="color:#33bd58">Normal</td>
+                    <td style="font-weight: bold">120/80</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Heart rate</h5>
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td style="color:#33bd58">Normal</td>
+                    <td style="font-weight: bold">120/80</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Oxygen level</h5>
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td style="color:#33bd58">Normal</td>
+                    <td style="font-weight: bold">120/80</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-deck mt-4 mb-4 pb-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">See All Parameters</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-4 mb-4 rightcol">
+        <h5 style="margin-top:10px">Test Orders</h5>
+        <table class="table table-borderless table-sm">
+          <thead class="thead" style="background-color:#141B41; color:white">
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">April 01,2020</th>
+              <th scope="col" style="text-align:right">Order Number 1002435 Invoice ViewDetails</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PBBS</td>
+            </tr>
+            <tr>
+              <td>Thyroid Profile</td>
+              <td style="text-align:right" class="raro">Test Again</td>
+            </tr>
+            <tr>
+              <td>Lipid Profile</td>
+              <td style="text-align:right" class="raro">View Report</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-borderless table-sm" style="cellspacing:0">
+          <thead class="thead" style="background-color:#141B41; color:white">
+            <tr>
+              <th scope="col">April 03,2020</th>
+              <th scope="col" style="text-align:right">HAMM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic Body Checkup</td>
+              <td style="text-align:right" class="raro">Test Again</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:right" class="raro">View Report</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-borderless table-sm">
+          <thead class="thead" style="background-color:#141B41; color:white">
+            <tr>
+              <th scope="col">April 03,2020</th>
+              <th scope="col" style="text-align:right">HAMM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Liquid Profile</td>
+              <td style="text-align:right" class="raro">Test Again</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:right" class="raro">View Report</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 rightcol">
+
+        <h5 style="margin-top:10px">Reports</h5>
+        <table class="table table-borderless table-sm" style="cellspacing:0">
+          <thead class="thead" style="background-color:#141B41; color:white">
+            <tr>
+              <th scope="col">April 03,2020</th>
+              <th scope="col" style="text-align:right">HAMM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PBBS</td>
+            </tr>
+            <tr>
+              <td>Thyroid Profile</td>
+              <td style="text-align:right" class="raro">Test Again</td>
+            </tr>
+            <tr>
+              <td>Lipid Profile</td>
+              <td style="text-align:right" class="raro">View Report</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-borderless table-sm" style="cellspacing:0">
+          <thead class="thead" style="background-color:#141B41; color:white">
+            <tr>
+              <th scope="col">April 03,2020</th>
+              <th scope="col" style="text-align:right">HAMM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic Body Checkup</td>
+              <td style="text-align:right" class="raro">Test Again</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:right" class="raro">View Report</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-borderless table-sm">
+          <thead class="thead" style="background-color:#141B41; color:white">
+            <tr>
+              <th scope="col">April 03,2020</th>
+              <th scope="col" style="text-align:right">HAMM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Liquid Profile</td>
+              <td style="text-align:right" class="raro">Test Again</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align:right" class="raro">View Report</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

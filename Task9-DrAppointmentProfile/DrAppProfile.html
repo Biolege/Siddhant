@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Hello, world!</title>
+</head>
+<style media="screen">
+  @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+  .container {
+    border: 2px solid #4392bf;
+    padding: 30px 35px 30px 35px;
+    border-radius: 10px;
+  }
+
+  .p {
+    margin-top: -20px;
+  }
+
+  .img-fluid {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .docname {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .docdetails {
+    font-size: 15px;
+    color: #292b2c;
+  }
+
+  .docdetails .verified:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+    padding: 3px 3px 3px 3px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -border-radius: 100%;
+    border-radius: 100%;
+    color: #f7f7f7;
+    background-color: #5cb85c;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .btn{
+    border-radius: 20px;
+  }
+  .btn1{
+    color: #f7f7f7;
+    background-color: #001840;
+  }
+  .btn1:hover{
+    color: #f7f7f7;
+  }
+  .btn p{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 10px;
+    color: #cecece;
+  }
+  .group .btn{
+    border-radius: 5px;
+
+    padding: 0px auto 0px auto !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .underlinebut {
+  background: transparent;
+  border: none;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  display: block;
+  font-size: 20px;
+  outline: none;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.underlinebut:before {
+  content: '';
+  border-bottom: 1px solid #001840;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.underlinebut:hover:before {
+  width: 100%;
+  padding: 0;
+}
+.underlinebut:active {
+  background: #000;
+  color: #fff;
+  -webkit-transition: none;
+  transition: none;
+}
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <img src="dummy.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-8">
+        <div class="docname">
+          <p>Dr. Radhaswami Iyer</p>
+        </div>
+        <div class="docdetails">
+          <p>Speciality</p>
+          <p>Degree and course details</p>
+          <p>12 Years experience</p>
+          <p class="verified">Verified</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="row" style="text-align:center; margin-bottom:20px;">
+          <h4 style="color: #4392bf; text-align:center;">Available Today</h4>
+        </div>
+        <div class="row" style="text-align:center;">
+          <button type="button" class="btn btn-block btn1">Tele-consultation <p>For Rs. 200</p></button>
+          <button type="button" class="btn btn-warning btn-block btn2">Book Appointment</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Bio</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="row">
+      <button class="underlinebut">Clinic Appointment</button>
+      <button class="underlinebut">Tele-consultation Appointment</button>
+    </div>
+    <div class="row">
+      <h4>Available on</h4>
+    </div>
+
+    <div class="row group">
+
+        <button type="button" class="btn btn-outline-primary">Monday <p>March 02</p></button>
+        <button type="button" class="btn btn-outline-primary">Tueday <p>March 03</p></button>
+        <button type="button" class="btn btn-outline-primary">Wednesday <p>March 04</p></button>
+        <button type="button" class="btn btn-outline-primary">Thursday <p>March 05</p></button>
+        <button type="button" class="btn btn-outline-primary">Friday <p>March 06</p></button>
+
+    </div>
+    <div class="row">
+      <h4>Slot Available</h4>
+    </div>
+    <div class="row">
+      <p>Morning</p>
+    </div>
+    <div class="row group">
+      <button type="button" class="btn btn-sm btn-outline-secondary">11:00 am</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary">11:00 am</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary">11:00 am</button>
+    </div>
+    <div class="row">
+      <p>Evening</p>
+    </div>
+    <div class="row group">
+      <button type="button" class="btn btn-sm btn-outline-secondary">11:00 am</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary">11:00 am</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary">11:00 am</button>
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
