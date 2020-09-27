@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+
+      .box-shadow {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Main Head*/
+      .main-head {
+        font-size: 24px;
+        line-height: 40px;
+        color: #000000;
+      }
+      /*Active Link*/
+      .active {
+        border-bottom: 2px solid black;
+      }
+      /*OTP Box*/
+      .otp-box {
+        border: 1px solid #0076ff;
+        box-sizing: border-box;
+        border-radius: 40px;
+      }
+      .digit-group input {
+        width: 30px;
+        height: 35px;
+        border: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+        line-height: 50px;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 200;
+        color: black;
+        margin: 0 2px;
+      }
+
+      .digit-group .splitter {
+        padding: 0 5px;
+        color: #808080;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex">
+        <div class="main-head">Orders</div>
+        <div class="ml-auto main-head">April 24, 2020 <i class="far fa-calendar-alt"></i></div>
+      </div>
+      <div class="row mt-sm-5">
+        <div class="col-12 px-0">
+          <div class="card box-shadow">
+            <div class="card-body">
+              <div class="col-12">
+                <div class="row">
+                  <div class="mx-auto">
+                    <div class="otp-box text-center px-5 py-5">
+                      <strong><div class="mb-4">Enter OTP</div></strong>
+                      <div
+                        class="col-sm-12 text-center text-muted small-text mb-4"
+                      >
+                        <form
+                          method="get"
+                          class="digit-group"
+                          data-group-name="digits"
+                          data-autosubmit="false"
+                          autocomplete="off"
+                        >
+                          <input
+                            type="text"
+                            id="digit-1"
+                            name="digit-1"
+                            data-next="digit-2"
+                          />
+                          <input
+                            type="text"
+                            id="digit-2"
+                            name="digit-2"
+                            data-next="digit-3"
+                            data-previous="digit-1"
+                          />
+                          <input
+                            type="text"
+                            id="digit-3"
+                            name="digit-3"
+                            data-next="digit-4"
+                            data-previous="digit-2"
+                          />
+                          <span class="splitter">&ndash;</span>
+                          <input
+                            type="text"
+                            id="digit-4"
+                            name="digit-4"
+                            data-next="digit-5"
+                            data-previous="digit-3"
+                          />
+                          <input
+                            type="text"
+                            id="digit-5"
+                            name="digit-5"
+                            data-next="digit-6"
+                            data-previous="digit-4"
+                          />
+                          <input
+                            type="text"
+                            id="digit-6"
+                            name="digit-6"
+                            data-previous="digit-5"
+                          />
+                        </form>
+                      </div>
+                      <div class="">
+                        <a href="" style="text-decoration: none; color: #000000"
+                          >Resend OTP</a
+                        >
+                        <div class="mt-4">
+                          <div
+                            class="btn"
+                            style="background-color: #ff8900; color: #fff"
+                          >
+                            <i class="fas fa-check-circle mx-2"></i>Done
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
